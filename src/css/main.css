@@ -260,11 +260,7 @@ body {
   font-family: IranSans;
 }
 
-#bgShow {
-    position: relative;
-    min-height: 600px;
-    background: url(../../public/img/bgShow.jpg) center center/cover no-repeat;
-  }
+
 
 
 .bgShow-main {
