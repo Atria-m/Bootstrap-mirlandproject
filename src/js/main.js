@@ -16,10 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "#bgShow .col-lg-6.d-none.d-lg-block img"
   );
 
-
   textCol.classList.add("animate-hidden-left");
   imgCol.classList.add("animate-hidden-right");
-
 
   const observer = new IntersectionObserver(
     (entries, observer) => {
@@ -33,12 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
             imgCol.classList.remove("animate-hidden-right");
             imgCol.classList.add("animate-fade-slide-in-right");
           }
-          observer.unobserve(entry.target); 
+          observer.unobserve(entry.target);
         }
       });
     },
     {
-      threshold: 0.2, 
+      threshold: 0.2,
     }
   );
 
@@ -53,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const messageBox = document.getElementById("messageBox");
   const nameError = document.getElementById("nameError");
   const emailError = document.getElementById("emailError");
-
 
   function validate() {
     let valid = true;
@@ -76,7 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return valid;
   }
 
-
   function showMessage(text, type = "success") {
     messageBox.textContent = text;
     messageBox.className = "";
@@ -90,93 +86,92 @@ document.addEventListener("DOMContentLoaded", () => {
   subscribeBtn.addEventListener("click", () => {
     if (!validate()) return;
 
-
-
     showMessage("عضویت شما با موفقیت ثبت شد!", "success");
-
 
     nameInput.value = "";
     emailInput.value = "";
   });
 })();
 
+document.querySelectorAll("#accordion .accordion-toggle").forEach((toggle) => {
+  toggle.addEventListener("click", function () {
+    const targetSelector = this.getAttribute("data-target");
+    const target = document.querySelector(targetSelector);
 
-  document.querySelectorAll('#accordion .accordion-toggle').forEach(toggle => {
-    toggle.addEventListener('click', function () {
-      const targetSelector = this.getAttribute('data-target');
-      const target = document.querySelector(targetSelector);
-
-      if (target.classList.contains('show')) {
-        target.classList.remove('show');
-        this.querySelector('i').classList.remove('open');
-      } else {
-        document.querySelectorAll('#accordion .collapse.show').forEach(openCollapse => {
-          openCollapse.classList.remove('show');
-          const icon = openCollapse.previousElementSibling.querySelector('i');
-          if (icon) icon.classList.remove('open');
+    if (target.classList.contains("show")) {
+      target.classList.remove("show");
+      this.querySelector("i").classList.remove("open");
+    } else {
+      document
+        .querySelectorAll("#accordion .collapse.show")
+        .forEach((openCollapse) => {
+          openCollapse.classList.remove("show");
+          const icon = openCollapse.previousElementSibling.querySelector("i");
+          if (icon) icon.classList.remove("open");
         });
-        target.classList.add('show');
-        this.querySelector('i').classList.add('open');
-      }
-    });
+      target.classList.add("show");
+      this.querySelector("i").classList.add("open");
+    }
   });
+});
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("#contact form");
-    const nameInput = form.querySelector('input[type="text"]');
-    const emailInput = form.querySelector('input[type="email"]');
-    const messageInput = form.querySelector("textarea");
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("#contact form");
+  const nameInput = form.querySelector('input[type="text"]');
+  const emailInput = form.querySelector('input[type="email"]');
+  const messageInput = form.querySelector("textarea");
 
-    function showError(input, message) {
-      input.classList.add("is-invalid");
+  function showError(input, message) {
+    input.classList.add("is-invalid");
 
-      let error = input.parentElement.querySelector(".invalid-feedback");
-      if (!error) {
-        error = document.createElement("div");
-        error.className = "invalid-feedback mt-1 text-danger small";
-        input.parentElement.appendChild(error);
-      }
-      error.innerText = message;
+    let error = input.parentElement.querySelector(".invalid-feedback");
+    if (!error) {
+      error = document.createElement("div");
+      error.className = "invalid-feedback mt-1 text-danger small";
+      input.parentElement.appendChild(error);
+    }
+    error.innerText = message;
+  }
+
+  function clearErrors() {
+    form
+      .querySelectorAll(".is-invalid")
+      .forEach((el) => el.classList.remove("is-invalid"));
+    form.querySelectorAll(".invalid-feedback").forEach((el) => el.remove());
+  }
+
+  function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    clearErrors();
+
+    let hasError = false;
+
+    if (nameInput.value.trim() === "") {
+      showError(nameInput, "لطفاً نام خود را وارد کنید.");
+      hasError = true;
     }
 
-    function clearErrors() {
-      form.querySelectorAll(".is-invalid").forEach(el => el.classList.remove("is-invalid"));
-      form.querySelectorAll(".invalid-feedback").forEach(el => el.remove());
+    if (emailInput.value.trim() === "") {
+      showError(emailInput, "لطفاً ایمیل خود را وارد کنید.");
+      hasError = true;
+    } else if (!isValidEmail(emailInput.value.trim())) {
+      showError(emailInput, "فرمت ایمیل معتبر نیست.");
+      hasError = true;
     }
 
-    function isValidEmail(email) {
-      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (messageInput.value.trim() === "") {
+      showError(messageInput, "لطفاً پیام خود را وارد کنید.");
+      hasError = true;
     }
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      clearErrors();
+    if (!hasError) {
+      alert("پیام شما با موفقیت ارسال شد! با تشکر از تماس شما 🙏");
 
-      let hasError = false;
-
-      if (nameInput.value.trim() === "") {
-        showError(nameInput, "لطفاً نام خود را وارد کنید.");
-        hasError = true;
-      }
-
-      if (emailInput.value.trim() === "") {
-        showError(emailInput, "لطفاً ایمیل خود را وارد کنید.");
-        hasError = true;
-      } else if (!isValidEmail(emailInput.value.trim())) {
-        showError(emailInput, "فرمت ایمیل معتبر نیست.");
-        hasError = true;
-      }
-
-      if (messageInput.value.trim() === "") {
-        showError(messageInput, "لطفاً پیام خود را وارد کنید.");
-        hasError = true;
-      }
-
-      if (!hasError) {
-        alert("پیام شما با موفقیت ارسال شد! با تشکر از تماس شما 🙏");
-
-        form.reset();
-      }
-    });
+      form.reset();
+    }
   });
-
+});

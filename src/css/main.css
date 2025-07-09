@@ -18,7 +18,7 @@ body {
 .navbar {
   background: linear-gradient(to right, #e0f0ff, #ffffff);
   box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
-  transition:  0.4s ease;
+  transition: 0.4s ease;
 }
 
 .navbar .nav-link {
@@ -43,7 +43,6 @@ body {
   width: 100%;
 }
 
-
 .btn-primary {
   background-color: #007bff;
   border: none;
@@ -54,18 +53,15 @@ body {
   box-shadow: 0 0 20px rgba(0, 123, 255, 0.6);
 }
 
-
 body.dark-theme {
   background: linear-gradient(160deg, #0a0a0f 0%, #101624 100%);
   color: #d0e2ff;
 }
 
-
 body.dark-theme .navbar {
   background: linear-gradient(90deg, #141b2d, #0f172a);
   box-shadow: 0 4px 20px rgba(0, 140, 255, 0.1);
 }
-
 
 body.dark-theme .nav-link {
   color: #84b8ff;
@@ -92,7 +88,6 @@ body.dark-theme .nav-link:hover::after {
   width: 100%;
 }
 
-
 body.dark-theme .btn-primary {
   background: linear-gradient(45deg, #1e3a8a, #2563eb);
   border: none;
@@ -106,7 +101,6 @@ body.dark-theme .btn-primary:hover {
   transform: translateY(-2px);
 }
 
-
 body.dark-theme .btn-outline-primary {
   border: 2px solid #3b82f6;
   color: #93c5fd;
@@ -118,7 +112,6 @@ body.dark-theme .btn-outline-primary:hover {
   border-color: #2563eb;
 }
 
-
 body.dark-theme section {
   background: linear-gradient(to bottom, #0e1726, #1a2332);
   padding-top: 60px;
@@ -126,7 +119,6 @@ body.dark-theme section {
   border-radius: 12px;
   margin-bottom: 40px;
 }
-
 
 .switch {
   font-size: 17px;
@@ -235,7 +227,6 @@ body.dark-theme section {
 .input:checked + .slider:before {
   transform: translateX(30px);
 
-
   .navbar-brand,
   .nav-link {
     animation: fadeInDown 0.6s ease both;
@@ -260,16 +251,10 @@ body {
   font-family: IranSans;
 }
 
-
-
-
 .bgShow-main {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.15),
- rgba(0, 0, 0, 0.15)
-  );
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
   color: #fff;
   display: flex;
   align-items: center;
@@ -296,7 +281,6 @@ body {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
 
-
 .bgShow-main a.btn-outline-primary {
   color: #c3d0ff;
   border-color: #c3d0ff;
@@ -311,12 +295,10 @@ body {
   box-shadow: 0 0 15px rgba(50, 64, 111, 0.7);
 }
 
-
 body.dark-theme #bgShow .bgShow-main {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   color: #d0e2ff;
 }
-
 
 @media (min-width: 992px) {
   .bgShow-main {
@@ -343,7 +325,6 @@ body.dark-theme #bgShow .bgShow-main {
   transition: none;
 }
 
-
 .animate-hidden-right {
   opacity: 0;
   transform: translateX(50px);
@@ -357,7 +338,6 @@ body.dark-theme #bgShow .bgShow-main {
 .animate-fade-slide-in-right {
   animation: fadeSlideInRight 2.5s ease forwards;
 }
-
 
 @keyframes fadeSlideInLeft {
   from {
@@ -398,12 +378,10 @@ body.dark-theme #bgShow .bgShow-main {
   border-radius: 12px;
 }
 
-
 .feature-icon {
   font-size: 2.8rem;
   transition: color 0.4s ease;
 }
-
 
 .feature-card.bg-primary {
   background-color: var(--primary-color);
@@ -418,7 +396,6 @@ body.dark-theme #bgShow .bgShow-main {
   border-color: var(--primary-color);
 }
 
-
 .feature-card:hover {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   transform: translateY(-8px);
@@ -431,7 +408,6 @@ body.dark-theme #bgShow .bgShow-main {
     transform: translateY(0);
   }
 }
-
 
 #featuresSection.dark-theme .feature-card {
   background-color: var(--bg-dark-card);
@@ -469,7 +445,6 @@ body.dark-theme #bgShow .bgShow-main {
   overflow: hidden;
 }
 
-
 .dark-theme #accordion .card {
   background-color: var(--bg-dark-card);
   border-color: var(--border-dark);
@@ -485,7 +460,6 @@ body.dark-theme #bgShow .bgShow-main {
   justify-content: center;
   align-items: center;
 }
-
 
 #accordion .card-header h4 {
   margin: 0;
@@ -506,7 +480,6 @@ body.dark-theme #bgShow .bgShow-main {
   padding: 0.2rem 1rem;
   border-radius: 0.6rem;
 }
-
 
 #accordion .card-header i.fas.fa-question-circle {
   font-size: 1.4rem;
