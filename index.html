@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fa" dir="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Mini Project</title>
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body id="home" data-spy="scroll" data-target="#nav-scroll">
+
+    <nav class="navbar navbar-expand-md fixed-top" id="nav-scroll">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="" class="navbar-brand d-flex align-items-center order-md-2">
+          <img src="public/img/logo.png" width="50" height="50" alt="" />
+          <h3 class="mb-0 ms-2">میرلند</h3>
+        </a>
+        <button
+        class="navbar-toggler order-md-1 bg-white rounded shadow-sm px-3 py-2"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-bars text-dark"></i>
+        </span>
+      </button>
+      
+        <div id="navbarCollapse" class="collapse navbar-collapse order-md-1">
+          <ul
+            class="navbar-nav me-auto align-items-center w-100 justify-content-md-end justify-content-center flex-md-row-reverse"
+          >
+            <li class="nav-item">
+              <a href="#home" class="nav-link">صفحه اصلی</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">درباره ما</a>
+            </li>
+            <li class="nav-item">
+              <a href="#comments" class="nav-link">نظرات</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link mb-3 mb-sm-0">تماس با ما</a>
+            </li>
+
+            <li class="nav-item d-flex align-items-center ms-3">
+              <!-- From Uiverse.io by andrew-demchenk0 -->
+              <label class="switch m-0">
+                <span class="sun">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g fill="#ffd43b">
+                      <circle r="5" cy="12" cx="12"></circle>
+                      <path
+                        d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"
+                      ></path>
+                    </g>
+                  </svg>
+                </span>
+                <span class="moon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+                    ></path>
+                  </svg>
+                </span>
+                <input type="checkbox" class="input" />
+                <span class="slider"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- bgShow -->
+    <section id="bgShow" class="position-relative">
+      <div class="bgShow-main text-white d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
+              <h1 class="display-4 fw-bold">شرکت بازرگانی منهاج</h1>
+              <p class="lead my-4">
+                اصحاب اطراف بر منهاج عبودیت و به التزام حمل و اتاوت و اقامت رسوم
+                خدمت استادگی نمودند. اصحاب اطراف بر منهاج عبودیت و به التزام حمل
+                و اتاوت و اقامت رسوم خدمت استادگی نمودند.
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-lg text-white">
+                اطلاعات بیشتر <i class="fas fa-arrow-left ms-2"></i>
+              </a>
+            </div>
+
+            <div class="col-lg-6 text-center d-none d-lg-block">
+              <img
+                src="public/img/poster.png"
+                class="img-fluid mt-4"
+                alt="پوستر منهاج"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- subscribe -->
+    <section
+      class="subscribe-section bg-light text-white py-5"
+      style="direction: rtl"
+    >
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <input
+              id="nameInput"
+              type="text"
+              class="form-control"
+              placeholder="نام را وارد کنید"
+              aria-label="نام"
+              required
+            />
+            <small class="text-danger mt-1 d-none" id="nameError"
+              >لطفا نام خود را وارد کنید.</small
+            >
+          </div>
+
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <input
+              id="emailInput"
+              type="email"
+              class="form-control"
+              placeholder="ایمیل را وارد کنید"
+              aria-label="ایمیل"
+              required
+            />
+            <small class="text-danger mt-1 d-none" id="emailError"
+              >ایمیل معتبر نیست.</small
+            >
+          </div>
+
+          <div
+            class="col-12 col-md-2 d-flex justify-content-md-start justify-content-center"
+          >
+            <button
+              id="subscribeBtn"
+              class="btn btn-primary f-800 px-4"
+              type="button"
+            >
+              تایید کن
+            </button>
+          </div>
+
+          <div class="col-12 mt-3">
+            <div id="messageBox" role="alert" class="d-none text-center"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- boxes -->
+    <section class="py-5" id="featuresSection">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card feature-card bg-primary text-white shadow-sm">
+              <div class="card-body text-center">
+                <i class="fas fa-cogs feature-icon mb-3"></i>
+                <p>
+                  شرکت بازرگانی منهاج یک شرکت سهامی خاص میباشد که دارای خدمات
+                  انبارداری ، ترخیص کالا و واردات میباشد
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              class="card feature-card border-primary text-primary shadow-sm"
+            >
+              <div class="card-body text-center">
+                <i class="fas fa-car feature-icon mb-3"></i>
+                <p>
+                  شرکت بازرگانی منهاج یک شرکت سهامی خاص میباشد که دارای خدمات
+                  انبارداری ، ترخیص کالا و واردات میباشد
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card feature-card bg-primary text-white shadow-sm">
+              <div class="card-body text-center">
+                <i class="fas fa-shopping-cart feature-icon mb-3"></i>
+                <p>
+                  شرکت بازرگانی منهاج یک شرکت سهامی خاص میباشد که دارای خدمات
+                  انبارداری ، ترخیص کالا و واردات میباشد
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              class="card feature-card border-primary text-primary shadow-sm"
+            >
+              <div class="card-body text-center">
+                <i class="fas fa-users feature-icon mb-3"></i>
+                <p>
+                  شرکت بازرگانی منهاج یک شرکت سهامی خاص میباشد که دارای خدمات
+                  انبارداری ، ترخیص کالا و واردات میباشد
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section
+      id="about"
+      class="py-5"
+      style="direction: rtl; background-color: var(--bg-light)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="mb-4 text-center">
+              <h2 class="pb-3 f-800" style="color: var(--primary-color)">
+                چرا شرکت بازرگانی منهاج؟
+              </h2>
+              <p
+                class="lead pb-3"
+                style="
+                  color: var(--primary-color);
+                  max-width: 700px;
+                  margin: 0 auto;
+                "
+              >
+                اصحاب اطراف بر منهاج عبودیت و به التزام حمل و اتاوت و اقامت رسوم
+                خدمت استادگی نمودند.
+              </p>
+            </div>
+
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="mb-0">
+                    <div data-target="#question-1" class="accordion-toggle">
+                      <i class="fas fa-question-circle rotate"></i>
+                      چرا باید منهاج را انتخاب کنیم؟
+                    </div>
+                  </h4>
+                </div>
+                <div class="collapse show" id="question-1">
+                  <div class="card-body">
+                    اصحاب اطراف بر منهاج عبودیت و به التزام حمل و اتاوت و اقامت
+                    رسوم خدمت استادگی نمودند. اصحاب اطراف بر منهاج عبودیت و به
+                    التزام حمل و اتاوت و اقامت رسوم خدمت استادگی نمودند. اصحاب
+                    اطراف بر منهاج عبودیت و به التزام حمل و اتاوت و اقامت رسوم
+                    خدمت استادگی نمودند.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="mb-0">
+                    <div data-target="#question-2" class="accordion-toggle">
+                      <i class="fas fa-question-circle rotate"></i>
+                      آیا منهج سیستم ترابری دارد؟
+                    </div>
+                  </h4>
+                </div>
+                <div class="collapse" id="question-2">
+                  <div class="card-body">
+                    اصحاب اطراف بر منهاج عبودیت و به التزام حمل و اتاوت و اقامت
+                    رسوم خدمت استادگی نمودند. اصحاب اطراف بر منهاج عبودیت و به
+                    التزام حمل و اتاوت و اقامت رسوم خدمت استادگی نمودند. اصحاب
+                    اطراف بر منهاج عبودیت و به التزام حمل و اتاوت و اقامت رسوم
+                    خدمت استادگی نمودند.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="mb-0">
+                    <div data-target="#question-3" class="accordion-toggle">
+                      <i class="fas fa-question-circle rotate"></i>
+                      آیا منهاج یک شرکت سهامی خاص است؟
+                    </div>
+                  </h4>
+                </div>
+                <div class="collapse" id="question-3">
+                  <div class="card-body">
+                    اصحاب اطراف بر منهاج عبودیت و به التزام حمل و اتاوت و اقامت
+                    رسوم خدمت استادگی نمودند. اصحاب اطراف بر منهاج عبودیت و به
+                    التزام حمل و اتاوت و اقامت رسوم خدمت استادگی نمودند. اصحاب
+                    اطراف بر منهاج عبودیت و به التزام حمل و اتاوت و اقامت رسوم
+                    خدمت استادگی نمودند.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- comments -->
+    <section id="comments" class="my-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="pb-3 f-800 text-primary">نظرات مشتریان</h2>
+            <p class="lead pb-3 mb-5 text-muted">
+              نظرات برخی از مشتریان شرکت بازرگانی منهاج که از خدمات شرکت منهاج
+              استفاده کرده‌اند.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <div class="card comment-card transition h-100">
+              <div class="card-body text-center">
+                <img
+                  src="public/img/customer-1.jpg"
+                  class="img-fluid rounded-circle w-50 mb-3 shadow"
+                  alt=""
+                />
+                <h3 class="text-primary">روح الله قربانی</h3>
+                <h5 class="text-muted">شرکت گوگل</h5>
+                <p class="text-secondary small mt-3">
+                  ما بسیار خرسند هستیم که با شرکت منهاج همکاری داشته‌ایم و بدون
+                  دغدغه و با خیال آسوده توانستیم از خدمات شرکت استفاده لازم را
+                  ببریم.
+                </p>
+
+                <div class="icon-link d-flex justify-content-center gap-4 mt-3">
+                  <a
+                    href="https://instagram.com/mirland_ir"
+                    class="text-primary text-decoration-none"
+                  >
+                    <i class="fab fa-instagram fontCommentsIcon"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/"
+                    class="text-primary text-decoration-none"
+                  >
+                    <i class="fab fa-twitter fontCommentsIcon"></i>
+                  </a>
+                  <a
+                    href="https://mirland.ir/"
+                    class="text-primary text-decoration-none"
+                  >
+                    <i class="fas fa-globe fontCommentsIcon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <div class="card comment-card transition h-100">
+              <div class="card-body text-center">
+                <img
+                  src="public/img/customer-2.jpg"
+                  class="img-fluid rounded-circle w-50 mb-3 shadow"
+                  alt=""
+                />
+                <h3 class="text-primary">روح الله قربانی</h3>
+                <h5 class="text-muted">شرکت گوگل</h5>
+                <p class="text-secondary small mt-3">
+                  ما بسیار خرسند هستیم که با شرکت منهاج همکاری داشته‌ایم و بدون
+                  دغدغه و با خیال آسوده توانستیم از خدمات شرکت استفاده لازم را
+                  ببریم.
+                </p>
+
+                <div class="icon-link d-flex justify-content-center gap-4 mt-3">
+                  <a
+                    href="https://instagram.com/mirland_ir"
+                    class="text-primary text-decoration-none"
+                  >
+                    <i class="fab fa-instagram fontCommentsIcon"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/"
+                    class="text-primary text-decoration-none"
+                  >
+                    <i class="fab fa-twitter fontCommentsIcon"></i>
+                  </a>
+                  <a
+                    href="https://mirland.ir/"
+                    class="text-primary text-decoration-none"
+                  >
+                    <i class="fas fa-globe fontCommentsIcon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <div class="card comment-card transition h-100">
+              <div class="card-body text-center">
+                <img
+                  src="public/img/customer-3.jpg"
+                  class="img-fluid rounded-circle w-50 mb-3 shadow"
+                  alt=""
+                />
+                <h3 class="text-primary">روح الله قربانی</h3>
+                <h5 class="text-muted">شرکت گوگل</h5>
+                <p class="text-secondary small mt-3">
+                  ما بسیار خرسند هستیم که با شرکت منهاج همکاری داشته‌ایم و بدون
+                  دغدغه و با خیال آسوده توانستیم از خدمات شرکت استفاده لازم را
+                  ببریم.
+                </p>
+
+                <div class="icon-link d-flex justify-content-center gap-4 mt-3">
+                  <a
+                    href="https://instagram.com/mirland_ir"
+                    class="text-primary text-decoration-none"
+                  >
+                    <i class="fab fa-instagram fontCommentsIcon"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/"
+                    class="text-primary text-decoration-none"
+                  >
+                    <i class="fab fa-twitter fontCommentsIcon"></i>
+                  </a>
+                  <a
+                    href="https://mirland.ir/"
+                    class="text-primary text-decoration-none"
+                  >
+                    <i class="fas fa-globe fontCommentsIcon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <div class="card comment-card transition h-100">
+              <div class="card-body text-center">
+                <img
+                  src="public/img/customer-4.jpg"
+                  class="img-fluid rounded-circle w-50 mb-3 shadow"
+                  alt=""
+                />
+                <h3 class="text-primary">روح الله قربانی</h3>
+                <h5 class="text-muted">شرکت گوگل</h5>
+                <p class="text-secondary small mt-3">
+                  ما بسیار خرسند هستیم که با شرکت منهاج همکاری داشته‌ایم و بدون
+                  دغدغه و با خیال آسوده توانستیم از خدمات شرکت استفاده لازم را
+                  ببریم.
+                </p>
+
+                <div class="icon-link d-flex justify-content-center gap-4 mt-3">
+                  <a
+                    href="https://instagram.com/mirland_ir"
+                    class="text-primary text-decoration-none"
+                  >
+                    <i class="fab fa-instagram fontCommentsIcon"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/"
+                    class="text-primary text-decoration-none"
+                  >
+                    <i class="fab fa-twitter fontCommentsIcon"></i>
+                  </a>
+                  <a
+                    href="https://mirland.ir/"
+                    class="text-primary text-decoration-none"
+                  >
+                    <i class="fas fa-globe fontCommentsIcon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="py-5 contact-section" style="direction: rtl">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <h3 class="f-800 text-heading">فرم تماس با ما</h3>
+            <p class="lead text-subheading">
+              شما میتوانید با فرم زیر با شرکت بازرگانی منهاج تماس حاصل فرمائید
+            </p>
+
+            <form>
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-icon text-icon">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control bg-input text-input border-custom"
+                  placeholder="نام"
+                />
+              </div>
+
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-icon text-icon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+                <input
+                  type="email"
+                  class="form-control bg-input text-input border-custom"
+                  placeholder="ایمیل"
+                />
+              </div>
+
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-icon text-icon">
+                    <i class="fas fa-pen"></i>
+                  </span>
+                </div>
+                <textarea
+                  class="form-control bg-input text-input border-custom"
+                  placeholder="پیام خود را بنویسید"
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <input
+                type="submit"
+                value="ارسال"
+                class="btn btn-primary btn-lg btn-block f-800"
+              />
+            </form>
+          </div>
+
+          <div class="col-lg-2 align-self-center text-left">
+            <img src="public/img/logo.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-custom py-3">
+      <div class="container">
+        <div class="row align-items-center text-center text-md-start">
+          <div class="col-md-6 mb-2 mb-md-0">
+            <p class="mb-0 small">
+              طراحی شده توسط آتریا | کلیه حقوق محفوظ است © 2025
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0 small">
+              ارتباط با ما:
+              <a href="atriamoiedy@gamil.com" class="footer-link"
+                >atriamoiedy@gamil.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="./src/js/jquery-3.3.1.min.js"></script>
+    <script src="./src/js/popper.min.js"></script>
+    <script src="./src/js/bootstrap.min.js"></script>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
